@@ -1,3 +1,213 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
 
+:root{
+	--bg-color: #1D2939;
+	--bg--hover: #18222F;
+	--text1:#adb5bd;
+	--text2:#343A40; 
+	--hover-color:white;
+	--extra-one:#00B297;
+	--shadow: 0 1px 4px 0px rgb(0 0 0 / 16%)
+}
 
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0px;
+	padding: 0px;
+}
+#checkbox_toggel{
+	display: none;
+}
+#checkbox_toggel:checked ~ .left_side{
+	width: 50px;
+}
+#checkbox_toggel:checked ~ .left_side ul li span{
+	display: none;
+}
+#checkbox_toggel:checked ~ .right_side{
+	margin-left: 50px;
+}
+.left_side{
+	margin: 0px;
+	padding: 0px;
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: white;
+	transition: .3s;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--extra-one);
+}
+.left_side .brand{
+	margin: 0px;
+	padding: 10px 0px;
+	cursor: pointer;
+}
+.left_side .brand .braket{
+	color: var(--extra-one);
+}
+.left_side .brand h2{
+	color: var(--text2);
+	text-align: center;
+	font-weight: 400;
+	font-size: 30px;
+	margin: 0px 0px;
+	padding: 0px;
+}
+
+.left_side .menu{
+	background-color: var(--bg-color);
+	margin: 0px;
+	padding: 5px;
+} 
+.left_side .menu ul{
+	margin: 0px;
+	padding: 10px;
+}
+.left_side .menu ul li{
+	list-style-type: none;
+}
+.left_side .menu ul li a{
+	text-decoration: none;
+	padding: 10px 10px;
+	display: block;
+	color: var(--text1);
+	font-size: 14px;
+	font-weight: 400;
+	transition: .6s;
+}
+.left_side .menu ul li.navigation{
+	color: gray;
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.left_side .menu ul li a.dashbord , .left_side .menu ul li a.dashbord:hover{
+	background-color: var(--extra-one);
+	color: white;
+	border-radius: 3px;
+}
+.left_side .menu ul li a:hover{
+	color: white;
+	background-color: var(--bg--hover);
+	border-radius: 3px;
+}
+
+.right_side{
+	background-color: red;
+	margin-left: 250px;
+	padding: 0px;
+	transition: .3s;
+}
+.right_side .header{
+	height: 46px;
+	padding: 10px;
+	background-color: white;
+	box-shadow: var(--shadow);
+	display: flex;
+	align-items: center;
+}
+.right_side .header .ham_menu{
+	display: flex;
+	align-items: center;
+	width: 20%;
+	justify-items: center; 
+	overflow: hidden;
+}
+.right_side .header .ham_menu h4{
+	margin: 0px;
+	padding: 0px;
+	font-weight: 400;
+	color: var(--text2);
+	font-size: 25px;
+}
+.right_side .header .ham_menu i{
+	cursor: pointer;
+	margin-right: 10px;
+	padding: 0px;
+	font-size: 20px;
+
+}
+
+.right_side .header .search{
+	position: relative;
+	width: 43%;
+	overflow: hidden;
+}
+.right_side .header input[type="text"] {
+    border: 1px solid gray;
+    padding: 10px 10px;
+    border-radius: 30px;
+    width: 90%;
+}
+
+.right_side .header i.fas.fa-search {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+.right_side .header .notification{
+	width: 15%;
+	overflow: hidden;
+}
+
+.right_side .header .notification{
+	width: 17%;
+}
+.right_side .header .notification ul{
+	margin: 0px;
+	padding: 0px;
+}
+.right_side .header .notification li{
+	display:inline-block;
+	list-style: none;
+	cursor: pointer;
+	padding: 10px 10px;
+	float: right;
+}
+.right_side .header .profile{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 25%;
+	overflow: hidden;
+}
+.right_side .header .profile img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	border: 2px solid var(--extra-one);
+	margin-right: 10px;
+}
+.right_side .header .profile h3{
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1;
+}
+.right_side .header .profile p{
+	margin: 0px;
+	padding: 0px;
+	font-weight: 400;
+	font-size: 16px;
+}
