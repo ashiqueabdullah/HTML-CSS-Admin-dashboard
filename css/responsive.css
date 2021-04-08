@@ -1,20 +1,27 @@
 
 /* if the viewport is equal to 340px or less than that */ 
 @media only screen and (max-width: 340px){
-    
-
+	.ham_menu{
+		width: 30%;
+	}
+	.notification{}
+	.profile{}
+	.search{
+		display: none;
+	}
 }
 
 
 /* if the viewport is equal to 340px or less than that */ 
 @media only screen and (max-width: 792px){
-   
+   .search{
+		display: none;
+	}
 }
 
 
 
 /* if the viewport is equal to 1910px or less than that */ 
 @media only screen and (max-width: 1910px){
-
-
+	
 }
